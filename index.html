@@ -104,7 +104,8 @@
         #free{
             font-size: 9ch;
             margin-bottom:0px;
-            margin-top: 70px
+            margin-top: 70px;
+            text-align: center;
         }
         #main-skills{
             background-color: bisque;
@@ -127,12 +128,15 @@
         footer{
             background-color: rgb(62, 62, 62);
         }
+        .navig{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="navig" align="right">
+            <div class="navig">
                 <nav>
                     <div class="point-of-nav">
                     <p class="nav-text">About me</p>
@@ -175,17 +179,17 @@
     </header>
     <main>
         <div class="container">
-            <h1 class="hello" id="hello-orange"><a name="about">And I'm a Front-end developer</a></h1>
+            <h1 class="hello" id="hello-orange"><a id="about">And I'm a Front-end developer</a></h1>
             <div class="about-me">
                 <p>I am a first year student of Innopolis University<br>
                 In my courses I am studying how to make awesome web-sites<br>
                 I will be happy to make some web-sites for you</p>
-                <p id="free" align="center">FOR FREE!!!</p>
+                <p id="free">FOR FREE!!!</p>
             </div>
         </div>
         <div id="main-skills">
             <div class="skills">
-                <h1 class="hello" id="my-skills"><a name="skills">My skills</a></h1>
+                <h1 class="hello" id="my-skills"><a id="skills">My skills</a></h1>
                 <div class="list">
                     <ul>
                         <li class="skill">HTML</li>
@@ -196,10 +200,10 @@
             </div>
         </div>
     </main>
-    <footer>
-        <a name="contacts" href="https://github.com/UTKANOS-RIBA" id="gh-link"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo" width="50px"></a>
-        <a href="https://t.me/artem_volkonitin" id="tg-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="telegram logo" width="50px"></a>
-        <a href="mailto:a.volkonitin@innopolis.university" id="email"><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" alt="email" width="50px"></a>
+    <footer id="contacts">
+        <a href="https://github.com/UTKANOS-RIBA" id="gh-link"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo" width="50"></a>
+        <a href="https://t.me/artem_volkonitin" id="tg-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="telegram logo" width="50"></a>
+        <a href="mailto:a.volkonitin@innopolis.university" id="email"><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" alt="email" width="50"></a>
     </footer>
 </body>
 </html>
