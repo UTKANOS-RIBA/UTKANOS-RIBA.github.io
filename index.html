@@ -44,12 +44,14 @@
         }
         .nav-text{
             margin-bottom: -30px;
-            opacity: 40%;
+            opacity: 20%;
         }
         .nav-text-main{
             font-weight:900;
             color: rgb(255, 106, 0);
-            
+        }
+        a{
+            text-decoration: none;
         }
         .point-of-nav{
             margin-right: 3%;
@@ -131,6 +133,31 @@
         .navig{
             text-align: right;
         }
+        .last{
+            color: bisque;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 5ch;
+        }
+        .surprise{
+            padding: 25px;
+        }
+        #smth-button{
+            -webkit-writing-mode: horizontal-tb !important;
+            -webkit-appearance: button;
+            border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+            border-style: solid;
+            border-width: 1px;
+            padding: 7px 7px 7px;
+            text-rendering: auto;
+            color: initial;
+            display: inline-block;
+            text-align: center;
+            margin: 0em;
+            font: 400 3ch system-ui;
+            color: rgb(62, 62, 62);
+            background-color: bisque;
+            border-radius: 10% 10% 10%;
+        }
     </style>
 </head>
 <body>
@@ -198,6 +225,11 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="surprise">
+            <h2 class="last">I have something for you...</h2>
+            <h3 class="last">Press the button below...</h3>
+            <button id="smth-button" onclick="window.location.href='comic.html'">Something</button>
         </div>
     </main>
     <footer id="contacts">
