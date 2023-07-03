@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="dist/index.js"></script>
+  <title>Something strange</title>
+  <style>
+    .container{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    .in-col{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 20px;
+    }
+    body{
+      background-color: bisque;
+    }
+    .button{
+      -webkit-writing-mode: horizontal-tb !important;
+      -webkit-appearance: button;
+      border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+      border-style: solid;
+      border-width: 1px;
+      padding: 7px 7px 7px;
+      text-rendering: auto;
+      color: initial;
+      display: inline-block;
+      text-align: center;
+      margin: 0em;
+      font: 400 3ch system-ui;
+      background-color: rgb(62, 62, 62);
+      color: bisque;
+      border-radius: 10% 10% 10%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="" alt="" id="photo">
+  <div class="in-col">
+    <p id="date"></p>
+    <button id="joke-button" class="button">Get something</button>
+    <button id="back-button" class="button" onclick="window.location.href='index.html'">Go back</button>
+  </div>
+</div>
+</body>
+</html>
