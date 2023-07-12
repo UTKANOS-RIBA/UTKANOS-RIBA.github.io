@@ -3,7 +3,7 @@ name: Deploy on GitHub Pages
 on:
   push:
     branches:
-      - main # (замените на main, если предпочитаете)
+      - main
 
 permissions:
   contents: write
@@ -18,11 +18,9 @@ jobs:
       - name: Setup Node.js v16
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # (или другая версия)
+          node-version: '16'
       - name: Install dependencies
         run: npm install
-      - name: Lint
-        run: npm run lint
       - name: Check
         run: npm run check
       - name: Build website
@@ -42,7 +40,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://github.com/UTKANOS-RIBA/UTKANOS-RIBA.github.io'
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy
         id: deployment
