@@ -1,3 +1,6 @@
+<script lang="ts">
+    import { base } from '$app/paths';
+</script>
 <svelte:head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,7 +77,7 @@
     <div class="surprise">
         <h2 class="last">I have something for you...</h2>
         <h3 class="last">Press the button below...</h3>
-        <button id="smth-button" onclick="window.location.href='comic_page'">Something</button>
+        <button id="smth-button" on:click="window.location.href='{base}/comic_page'">Something</button>
     </div>
 </main>
 <footer id="contacts">
