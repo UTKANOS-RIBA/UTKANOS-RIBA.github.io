@@ -1,7 +1,6 @@
 <script lang="ts">
     import dayjs from "dayjs";
     import type { XKCDObject } from "../../lib/interface";
-    import { base } from '$app/paths';
     async function getXKCD() {
             const url: string = `https://fwd.innopolis.app/api/hw2/?${new URLSearchParams({email: 'a.volkonitin@innopolis.university'})}`;
             const response: Response = await fetch(url);
@@ -35,7 +34,9 @@
     <img src="" alt="" id="photo">
     <div class="in-col">
         <p id="date"></p>
-        <button id="joke-button" class="button" on:click={setXKCDData} >Get something</button>
-        <button id="back-button" class="button" on:click="window.location.href='{base}'">Go back</button>
+        <form action="../">
+            <button id="back-button" class="button" type="submit">Go back</button>
+        </form>
+        <button id="joke-button" class="button" on:click={setXKCDData}>Get something</button>
     </div>
 </div>
